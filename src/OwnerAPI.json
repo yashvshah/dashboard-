@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "88595d7c-711a-49e2-8104-0b21f03416db",
+		"name": "Owner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\":\"Rameshbhai\",\r\n  \"lastName\":\"Patel\",\r\n  \"email\":\"Rameshbhai123@gmail.com\",\r\n  \"contactNo\":\"9456872165\",\r\n  \"password\":\"123\",\r\n  \"confirmPassword\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/owner/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owner",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"contactNo\":9456872165,\r\n  \"password\" :\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/owner/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"owner",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddStation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"ownerId\" :\"620103e0c1195fc7cad68a9b\",\r\n\"ownerName\":\"MaheshBhai Patel\",\r\n\"StationName\":\"Maruti Charging Station \",\r\n\"ContactNo\":\"9988776655\",\r\n\"address\":\"114,shyamdham,maruti-nandan,ahemdabad,gujarat,india.\",  \r\n\"city\":\"Ahemdabad\",\r\n\"pincode\":\"320008\",\r\n\"state\":\"gujrat\",\r\n\"plug1\":\"CHowM2-1\",\r\n\"Plug2\":\"Type-1\",\r\n\"openingTime\":\"6:00AM\",\r\n\"closeTime\":\"6:00PM\",\r\n\"Latitude\":\"23.0225\",\r\n\"Longitude\":\"72.5714\",\r\n\"Image\":\"https://d2q5yj3kkcfw7v.cloudfront.net/listing/0006/92/26513299cda340434f2378b2e02fd5c4ea500276.jpeg\",\r\n\"rating\":3,\r\n\"review\":11,\r\n\"Location\":\"https://goo.gl/maps/2W7dhvExdaX71Rib6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/addStation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addStation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
